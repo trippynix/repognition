@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+3.11venv/
+
+# Data / outputs
+data/
+*.json
+*.log
+repos/
+
+# IDEs
+.vscode/
+.idea/

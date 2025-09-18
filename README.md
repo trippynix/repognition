@@ -18,7 +18,7 @@ Designed for developers working with large or unfamiliar repositories, AI-DevAss
 
 ### Basic Project Flow
 
-![Project Flow](assets/flowchart.png)
+![Project Flow](assets/basic_flow_chart.png)
 
 ## Features
 

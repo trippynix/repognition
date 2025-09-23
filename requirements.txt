@@ -1,7 +1,10 @@
 # ------------------ Core ------------------
-pathspec>=0.12.1
-gitpython>=3.1.45
+pathspec==0.12.1
+gitpython==3.1.45
 # ------------------ LangChain ------------------
-langchain>=0.3.27
-langchain-text-splitters>=0.3.11
-ollama
+langchain==0.3.27
+langchain-text-splitters==0.3.11
+ollama==0.5.4
+langchain-community==0.3.29
+faiss-cpu
+langchain-ollama

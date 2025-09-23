@@ -43,7 +43,7 @@ def generate_summary(code_chunk: str) -> str:
         return ""
 
     prompt = (
-        "Summarize the following Python code chunk in one concise sentence. "
+        "Summarize the following Python code chunk in one concise sentence. If there's no code but a markdown content from a readme ignore and reply 'markdown'"
         "Only explain what it does, no extra words:\n\n" + code_chunk
     )
     return stream_ollama_response(prompt)

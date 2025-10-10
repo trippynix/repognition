@@ -7,3 +7,4 @@ langchain-community==0.3.29
 faiss-cpu
 langchain-ollama
 typer
+streamlit

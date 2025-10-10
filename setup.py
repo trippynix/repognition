@@ -17,6 +17,7 @@ setup(
         "langchain-ollama",
         "requests",
         "typer",
+        "streamlit",
     ],
     entry_points={
         "console_scripts": [

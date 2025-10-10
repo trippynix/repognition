@@ -24,12 +24,16 @@ class RepoPipeline:
         # 2️⃣ Vectorize chunks
         # -----------------------------
         print("⚡ Starting vectorization...")
-        if os.path.exists(os.path.join(self.vectorizer.db_path, "index.faiss")):
+        if os.path.exists(
+            os.path.join(
+                self.vectorizer.db_path, f"{self.github_url.split('/')[-1]}_vectorstore"
+            )
+        ):
             print("🔄 FAISS vectorstore already exists, loading...")
-            vectorstore = self.vectorizer.load()
+            vectorstore = self.vectorizer.load(self.github_url)
         else:
             print("⚡ Creating new FAISS vectorstore...")
-            vectorstore = self.vectorizer.build()  # pass chunks directly
+            vectorstore = self.vectorizer.build(self.github_url)  # pass chunks directly
 
         print("🎯 Pipeline completed successfully!")
         return vectorstore

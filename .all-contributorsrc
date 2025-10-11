@@ -1,4 +1,21 @@
 {
   "projectName": "repognition",
-  "projectOwner": "trippynix"
+  "projectOwner": "trippynix",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "HeMaNtMoRee",
+      "name": "HeMaNtMoRee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98967665?v=4",
+      "profile": "https://github.com/HeMaNtMoRee",
+      "contributions": [
+        "bug"
+      ]
+    }
+  ]
 }

@@ -1,5 +1,7 @@
 # 🧠Repo-gnition
 
+![Social Preview](assets/social_preview.png)
+
 Your AI-powered copilot for understanding and navigating complex codebases. Ask questions in natural language and get answers with direct source code citations.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)  

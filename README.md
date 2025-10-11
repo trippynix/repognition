@@ -1,4 +1,4 @@
-# Repo-gnition
+# 🧠Repo-gnition
 
 Your AI-powered copilot for understanding and navigating complex codebases. Ask questions in natural language and get answers with direct source code citations.
 
@@ -12,7 +12,7 @@ Repo-gniton is a command-line tool designed to help developers quickly get up to
 
 Instead of manually searching through files, you can simply ask questions like, "How is user authentication handled?" or "Where is the database connection configured?", and the assistant will find the relevant code snippets and explain them.
 
-## How It Works
+## 🚀 How It Works
 
 The tool operates in two main phases:
 
@@ -48,7 +48,7 @@ Once a repository is indexed, you can start an interactive chat session.
 
 For very deep and detailed interaction and pipeline of the project check [this](assets/flowchart.png) out.
 
-## Features
+## ✨ Features
 
 - Dynamic Repo Cloning: Clones any public GitHub repository.
 
@@ -64,7 +64,7 @@ For very deep and detailed interaction and pipeline of the project check [this](
 
 - Local First: Leverages local models via Ollama for privacy and offline use.
 
-## Prerequisites
+## 🛠 Prerequisites
 
 Before you begin, you need to have Ollama installed and running with a model that can be used for both embeddings and generation.
 
@@ -88,7 +88,7 @@ The default embedding model is `nomic-embed-text`.
 ollama pull nomic-embed-text
 ```
 
-## Installation
+## 🛠 Installation
 
 ### 1. Clone the Repository
 
@@ -112,7 +112,7 @@ Installing with `-e .` makes the `repognition` command available in your termina
 pip install -e .
 ```
 
-## Usage
+## 💻 Usage
 
 The tool has two main commands: index and query.
 
@@ -225,7 +225,7 @@ repogniton/
 └── setup.py                # Project setup and installation script
 ```
 
-## Challenges and Future Enhancements
+## 🧠 Challenges and Future Enhancements
 
 This project provides a solid foundation for an AI code assistant, but there are several exciting challenges to tackle to make it truly intelligent. Here are the key areas for future development:
 
@@ -269,22 +269,24 @@ This project provides a solid foundation for an AI code assistant, but there are
 
   - **Frontend**: Build a modern, responsive frontend using a framework like React or Vue.js for a highly interactive and polished user experience.
 
-## Contributing
+## 🤝 Contributing
 
-Contributing
-Contributions are welcome! Please feel free to open an issue or submit a pull request.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated. Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-1. Fork the repository.
+## ✨ Contributors
 
-2. Create a new branch (`git checkout -b feature/your-feature`).
+This project exists thanks to all the people who contribute. A huge thank you to all of you!
 
-3. Make your changes.
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 
-4. Commit your changes (`git commit -m 'Add some feature'`).
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
-5. Push to the branch (`git push origin feature/your-feature`).
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-6. Open a Pull Request.
+[![All Contributors](https://img.shields.io/github/all-contributors/trippynix/repognition?color=ee8449&style=flat-square)](#contributors)
 
 ## License
 

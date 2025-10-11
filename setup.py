@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="ai_dev_assistant",
+    name="repognition",
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
@@ -16,12 +16,11 @@ setup(
         "faiss-cpu",
         "langchain-ollama",
         "requests",
-        "typer",
         "streamlit",
     ],
     entry_points={
         "console_scripts": [
-            "ai-dev-assistant = app.cli:app",
+            "repognition = app.cli:app",
         ],
     },
 )

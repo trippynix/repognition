@@ -1,4 +1,4 @@
-# AI-DevAssistant
+# Repo-gnition
 
 Your AI-powered copilot for understanding and navigating complex codebases. Ask questions in natural language and get answers with direct source code citations.
 
@@ -8,7 +8,7 @@ Your AI-powered copilot for understanding and navigating complex codebases. Ask 
 
 ## Overview
 
-AI-DevAssistant is a command-line tool designed to help developers quickly get up to speed with large or unfamiliar codebases. It leverages a Retrieval-Augmented Generation (RAG) architecture to provide accurate, context-aware answers to your questions.
+Repo-gniton is a command-line tool designed to help developers quickly get up to speed with large or unfamiliar codebases. It leverages a Retrieval-Augmented Generation (RAG) architecture to provide accurate, context-aware answers to your questions.
 
 Instead of manually searching through files, you can simply ask questions like, "How is user authentication handled?" or "Where is the database connection configured?", and the assistant will find the relevant code snippets and explain them.
 
@@ -93,8 +93,8 @@ ollama pull nomic-embed-text
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/trippynix/AI-DevAssistant.git
-cd AI-DevAssistant
+git clone https://github.com/trippynix/repognition.git
+cd repognition
 ```
 
 ### 2. Create and Activate a Virtual Environment
@@ -106,7 +106,7 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 ### 3. Install Dependencies and the CLI Tool
 
-Installing with `-e .` makes the `ai-dev-assistant` command available in your terminal.
+Installing with `-e .` makes the `repognition` command available in your terminal.
 
 ```bash
 pip install -e .
@@ -143,13 +143,13 @@ For command-line users, the original CLI is still available for scripting or hea
 First, you must index the repository you want to query. This process may take a few minutes depending on the size of the repository and your hardware.
 
 ```bash
-ai-dev-assistant index <github_url>
+repognition index <github_url>
 ```
 
 ### Example:
 
 ```bash
-ai-dev-assistant index https://github.com/langchain-ai/langchain
+repognition index https://github.com/langchain-ai/langchain
 ```
 
 You will see a progress output as it processes each file. Once complete, a vector store will be saved locally in the `data/` directory.
@@ -159,13 +159,13 @@ You will see a progress output as it processes each file. Once complete, a vecto
 After indexing, you can start an interactive query session.
 
 ```bash
-ai-dev-assistant query <github_url>
+repogniton query <github_url>
 ```
 
 ### Example:
 
 ```bash
-ai-dev-assistant query https://github.com/langchain-ai/langchain
+repogniton query https://github.com/langchain-ai/langchain
 ```
 
 This will launch an interactive prompt. Ask your questions and type `exit` to quit.
@@ -200,7 +200,7 @@ You can customize the models and paths in `config/settings.py`.
 ## Folder Structure
 
 ```
-AI-DevAssistant/
+repogniton/
 ├── app/
 │   └── cli.py              # Typer-based command-line interface
 ├── config/

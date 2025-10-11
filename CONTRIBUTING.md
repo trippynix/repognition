@@ -33,7 +33,21 @@ git clone https://github.com/your-username/repognition.git
 cd repognition
 ```
 
-### 2. Set Up the Development Environment
+### 2. Sync Your Fork
+
+Before creating a new branch, make sure your fork is up-to-date with the main project. First, configure the original repository as the "upstream" remote:
+
+```bash
+git remote add upstream https://github.com/your-username/repognition.git
+```
+
+Now, pull the latest changes from the upstream main branch to ensure you're working with the most recent version:
+
+```bash
+git pull upstream main
+```
+
+### 3. Set Up the Development Environment
 
 We recommend using a Python virtual environment to keep dependencies isolated.
 
@@ -48,7 +62,7 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 pip install -e .
 ```
 
-### 3. Create a New Branch
+### 4. Create a New Branch
 
 Create a new branch for your changes. Please use a descriptive name that reflects the feature or fix you're working on.
 
@@ -60,7 +74,7 @@ git checkout -b feature/your-feature-name
 git checkout -b fix/your-bug-fix
 ```
 
-### 4. Write Your Code
+### 5. Write Your Code
 
 Now you can start making your changes! As you work, please keep the following in mind:
 
@@ -74,7 +88,7 @@ Now you can start making your changes! As you work, please keep the following in
 
 - **Keep it Focused**: Each pull request should address a single issue or feature. Avoid bundling multiple unrelated changes into one PR.
 
-### 5. Submit a Pull Request
+### 6. Submit a Pull Request
 
 Once you're happy with your changes, push your branch to your fork and open a pull request against the `main` branch of the original repository.
 

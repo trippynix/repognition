@@ -94,7 +94,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown(
         "Created by [Amey Tonannavar](https://github.com/trippynix) | "
-        "[View Source](https://github.com/your-username/AI-DevAssistant)"
+        "[View Source](https://github.com/trippynix/repognition)"
     )
 
 

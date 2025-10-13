@@ -286,6 +286,7 @@ This project exists thanks to all the people who contribute. A huge thank you to
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/HeMaNtMoRee"><img src="https://avatars.githubusercontent.com/u/98967665?v=4?s=100" width="100px;" alt="HeMaNtMoRee"/><br /><sub><b>HeMaNtMoRee</b></sub></a><br /><a href="#bug-HeMaNtMoRee" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://medibot-ai.com"><img src="https://avatars.githubusercontent.com/u/143084478?v=4?s=100" width="100px;" alt="Vignesh Skanda "/><br /><sub><b>Vignesh Skanda </b></sub></a><br /><a href="#code-vignesh1507" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>

@@ -8,3 +8,4 @@ faiss-cpu
 langchain-ollama
 typer[all]
 streamlit
+pytest

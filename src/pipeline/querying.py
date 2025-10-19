@@ -1,6 +1,6 @@
 # src/pipeline/querying.py
 from langchain.chains import RetrievalQA
-from langchain_community.llms import Ollama
+from langchain_ollama import OllamaLLM
 from src.components.vectorstore import VectorstoreManager
 from config.settings import LLM_MODEL
 
@@ -10,7 +10,7 @@ class QueryPipeline:
         self.github_url = github_url
         self.repo_name = github_url.split("/")[-1]
         self.vectorstore_manager = VectorstoreManager()
-        self.llm = Ollama(model=LLM_MODEL)
+        self.llm = OllamaLLM(model=LLM_MODEL)
         self.qa_chain = None
 
     def setup(self):

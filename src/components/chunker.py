@@ -4,7 +4,7 @@ from src.parsers.python_parser import parse_python_with_ast
 from src.parsers.js_parser import parse_js
 from src.parsers.java_parser import parse_java
 from src.parsers.markdown_parser import markdown_split
-from src.llm.ollama_client import generate_summary, extract_keywords
+from src.llm.ollama_client import enrich_chunk
 
 
 def _parse_file(file_path):
@@ -24,7 +24,10 @@ def _parse_file(file_path):
 
 
 def process_and_chunk_file(file_path, repo_name):
-    """Parses a single file, adds metadata, and returns a list of chunks."""
+    """
+    Parses a single file, adds metadata, and returns a list of chunks.
+    (This is now a sequential operation for a single file).
+    """
     raw_chunks, lang = _parse_file(file_path)
     if lang == "unknown":
         return []
@@ -32,8 +35,12 @@ def process_and_chunk_file(file_path, repo_name):
     processed_chunks = []
     for i, chunk in enumerate(raw_chunks):
         content = chunk.get("content", "")
-        summary = generate_summary(content)
-        keywords = extract_keywords(content)
+
+        # Enrich chunks one by one
+        enriched_data = enrich_chunk(content)
+        summary = enriched_data["summary"]
+        keywords = enriched_data["keywords"]
+
         entry = {
             "repo": repo_name,
             "file_path": file_path,

@@ -2,6 +2,7 @@
 import typer
 from src.pipeline.indexing import IndexingPipeline
 from src.pipeline.querying import QueryPipeline
+import time
 
 app = typer.Typer()
 
@@ -10,9 +11,12 @@ app = typer.Typer()
 def index(github_url: str):
     """Indexes a GitHub repository: clones, chunks, and vectorizes it."""
     typer.echo(f"🚀 Starting indexing for: {github_url}")
+    start_time = time.time()
     pipeline = IndexingPipeline(github_url)
     pipeline.run()
+    end_time = time.time()
     typer.echo("✅ Indexing complete.")
+    typer.echo(f"⏱️ Time taken: {end_time - start_time:.2f} seconds")
 
 
 @app.command()

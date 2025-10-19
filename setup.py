@@ -17,6 +17,7 @@ setup(
         "langchain-ollama",
         "requests",
         "streamlit",
+        "pytest",
     ],
     entry_points={
         "console_scripts": [
